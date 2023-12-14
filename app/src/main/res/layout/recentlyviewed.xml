@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/www"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/leftImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:padding="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:padding="16dp"
+            android:id="@+id/rightImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notifications"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ertee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/www">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recently Viewed"
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="#F55A00"
+
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ertee"
+        android:layout_marginTop="0dp"
+        android:id="@+id/relativeLayoutWithSearch33">
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/searchtext"
+                android:layout_width="183dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:contentDescription="Search Bar"
+                android:hint=" Search For Recipies"
+                android:drawableLeft="@drawable/search"
+
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:src="@drawable/menu"
+                android:padding="20dp"
+                android:contentDescription="Search Button" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1223"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutWithSearch33"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>

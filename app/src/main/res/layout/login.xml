@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainwe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="-1dp"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/kjhg"
+            android:text="Daily Recipe"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:textSize="30dp"
+            android:layout_marginEnd="147dp"
+            android:text="Sign In"
+            android:textColor="@color/white" />
+
+        <EditText
+
+            android:id="@+id/email190"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:layout_below="@id/textView2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:drawableLeft="@drawable/email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/password190"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/email190"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:drawableLeft="@drawable/password"
+            android:drawableRight="@drawable/view"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#808080" />
+
+        <ImageView
+            android:id="@+id/textView39"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="262dp"
+            android:layout_marginEnd="59dp"
+            android:src="@drawable/buttonnn"
+            android:text="TextView 3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView39"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="34dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4bc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register."
+                android:textColor="#F55A00"
+
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

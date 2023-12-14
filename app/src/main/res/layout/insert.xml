@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView677"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:padding="0dp"
+        android:text="  Insert Recipes"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageview123"
+        android:layout_below="@+id/textView677"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/first1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview123"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Name" />
+    <ScrollView
+        android:id="@+id/first132"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/first1"
+        android:layout_marginTop="20dp">
+
+    <EditText
+        android:id="@+id/first123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Description" />
+    </ScrollView>
+
+
+    <ScrollView
+        android:id="@+id/first12"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/first132"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/first2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Type" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/first22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first12"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Calories" />
+
+    <EditText
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first22"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Time(10 mins)" />
+    <EditText
+        android:id="@+id/first33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="1 serving" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelectImage"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:hint="SUBMIT" />
+
+    <Button
+        android:id="@+id/SelectImage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first33"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffa500"
+        android:text="SELECT IMAGE"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
