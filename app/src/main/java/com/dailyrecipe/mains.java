@@ -140,7 +140,7 @@ public class mains extends AppCompatActivity {
         protected void onPostExecute(List<Recipe> recipes) {
             super.onPostExecute(recipes);
             // first RecyclerView
-            RecipeAdapter recipeAdapter = new RecipeAdapter(recipes);
+            RecipeAdapter recipeAdapter = new RecipeAdapter(recipes,context);
             recyclerView.setAdapter(recipeAdapter);
 
             // second RecyclerView

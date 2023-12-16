@@ -21,10 +21,18 @@ public class Recipe {
     private int userId;
 
     private String description;
+    private boolean isLiked;
+
+    public boolean isLiked() {
+        return isLiked;
+    }
+
+    public void setLiked(boolean liked) {
+        isLiked = liked;
+    }
 
 
-
-    // Constructors, getters, setters, etc.
+// Constructors, getters, setters, etc.
 
     public String getDescription() {
         return description;

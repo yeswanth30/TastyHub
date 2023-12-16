@@ -115,24 +115,3 @@ public class recipieinfo extends AppCompatActivity {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
